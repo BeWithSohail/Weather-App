@@ -13,8 +13,8 @@
     width: 40%;
     margin: 4rem auto;
     border-radius: 10px;
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,161,253,0.7791491596638656) 92%);
+    background: black;
+    /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,161,253,0.7791491596638656) 92%); */
 }
 
 .weather__header {
