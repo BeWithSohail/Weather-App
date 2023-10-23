@@ -8,12 +8,13 @@
 }
 
 .container {
-    background: #171717;
     color: #fff;
     padding: 2rem;
     width: 40%;
     margin: 4rem auto;
     border-radius: 10px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,161,253,0.7791491596638656) 92%);
 }
 
 .weather__header {
@@ -24,11 +25,12 @@
 
 input {
     border: none;
-    background: #1e1e1e;
+    background:none;
     outline: none;
     color: #fff;
-    padding: 0.5rem 2.5rem;
+    padding: 0.5rem 12rem 0.5rem 2.5rem;
     border-radius: 5px;
+    border: 1px solid #fff;
 }
 
 input::placeholder {
@@ -70,10 +72,11 @@ input::placeholder {
 }
 
 .weather__forecast {
-    background: #1e1e1e;
+    background: #fff;
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 30px;
+    color: #333;
 }
 
 .weather__icon img {
@@ -104,7 +107,6 @@ input::placeholder {
 .weather__card {
     display: flex;
     align-items: center;
-    background: #1e1e1e;
     padding: 1rem;
     border-radius: 10px;
 }
