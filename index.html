@@ -11,35 +11,36 @@
     <div class="container">
         <div class="weather__header">
             <form class="weather__search">
-                <input type="text" placeholder="Search for a city..." class="weather__searchform">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for a city to check weather" class="weather__searchform">
+                <button type="button" id="search_weather" class="search_app"> 
+                    <span class="search_icon"> 
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </button>
             </form> 
-            <div class="weather__units">
-                <span class="weather_unit_celsius">&#176C</span>
-                <span class="weather_unit_farenheit">&#176F</span>
+            <div class="error_msg">
             </div>
         </div>
         <div class="weather__body">
             <h1 class="weather__city"></h1>
-            <div class="weather__datetime">
-            </div>
             <div class="weather__forecast"></div>
+            <div class="weather__icon">
+            
+            </div>
             <div class="weather__icon">
             </div>
             <p class="weather__temperature">
             </p>
             <div class="weather__minmax">
-                <p>Min: 12&#176</p>
-                <p>Max: 16&#176</p>
+                <p>Min: <span class="min_temp"> </span> </p>
+                <p>Max: <span class="max_temp"> </span> </p>
             </div>
-        </div>
-
         <div class="weather__info">
             <div class="weather__card">
                 <i class="fa-solid fa-temperature-full"></i>
                 <div>
                     <p>Real Feel</p>
-                    <p class="weather__realfeel">18&#176</p>
+                    <p class="weather__realfeel"></p>
                 </div>
             </div>
             <div class="weather__card">
@@ -64,6 +65,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
