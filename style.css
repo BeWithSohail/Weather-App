@@ -13,13 +13,12 @@
     width: 40%;
     margin: 4rem auto;
     border-radius: 10px;
-    background: black;
-    /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,161,253,0.7791491596638656) 92%); */
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,161,253,0.7791491596638656) 92%);
 }
 
 .weather__header {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    justify-content: center;
     align-items: center;
 }
 
@@ -28,9 +27,15 @@ input {
     background:none;
     outline: none;
     color: #fff;
-    padding: 0.5rem 12rem 0.5rem 2.5rem;
+    padding: 12px 12px;
     border-radius: 5px;
     border: 1px solid #fff;
+    width: 85%;
+    display: block;
+}
+
+.weather__body{
+    display: none;
 }
 
 input::placeholder {
@@ -39,10 +44,10 @@ input::placeholder {
 
 .weather__search {
     position: relative;
+    display: flex;
 }
 
 .weather__search i {
-    position: absolute;
     left: 10px;
     top: 10px;
     font-size: 15px;
@@ -51,6 +56,16 @@ input::placeholder {
 
 .weather__units {
     font-size: 1.5rem;
+}
+.search_app{
+    padding: 8px 25px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    margin-left: 15px;
+
+    cursor: pointer;
 }
 
 .weather__units span {
@@ -63,20 +78,26 @@ input::placeholder {
 
 .weather__body {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .weather__datetime {
-    margin-bottom: 2rem;
+    margin-bottom: 4px;
     font-size: 14px;
 }
 
 .weather__forecast {
     background: #fff;
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 3rem;
     border-radius: 30px;
     color: #333;
+}
+.error_msg{
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+    display: none;
 }
 
 .weather__icon img {
@@ -86,7 +107,10 @@ input::placeholder {
 .weather__temperature {
     font-size: 1.75rem;
 }
-
+h1.weather__city {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 .weather__minmax {
     display: flex;
     justify-content: center;
@@ -101,7 +125,7 @@ input::placeholder {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .weather__card {
